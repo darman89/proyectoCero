@@ -1,0 +1,45 @@
+extends layout
+
+block variables
+  - var title = "Dashboard"
+
+block content
+  .row
+    .offset-sm-1.col-sm-10
+      h2.mb-3.text-center.text-secondary 
+        strong Listado de Eventos
+      p.text-justify.px-3
+       strong Nota: 
+       span Para ver, editar o eliminar un evento por favor seleccione un evento en la tabla y a continuación presione el botón de la acción a ejecutar:
+      .row
+      .col-sm-12.table-responsive
+        table.table.table-striped.table-bordered.table-fp(id="events-table")
+          thead 
+            tr
+              th Nombre
+              th Lugar
+              th Fecha Inicio
+              th Fecha Fin
+              th Uri
+          tbody(style="cursor: pointer;")
+  #containerModal(class="row")
+
+  script
+    include ../public/javascripts/jquery-3.3.1.js
+  script
+    include ../public/javascripts/popper.min.js
+  script
+    include ../public/javascripts/bootstrap.min.js
+  script
+    include ../public/javascripts/jquery.dataTables.min.js
+  script
+    include ../public/javascripts/dataTables.bootstrap4.min.js
+  script
+    include ../public/javascripts/dataTables.select.min.js
+  script
+    include ../public/javascripts/dataTables.buttons.min.js
+  script
+    include ../public/javascripts/buttons.bootstrap4.min.js
+  script
+    include ../public/javascripts/datatable.js
+

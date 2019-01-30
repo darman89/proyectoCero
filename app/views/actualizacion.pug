@@ -1,0 +1,17 @@
+#actualizarModal(class="modal fade bd-example-modal-lg" role="dialog")
+    div(class="modal-dialog modal-lg" role="document")
+      form#actualizar_evento(autocomplete="off"  name="actualizar_evento" action=uri)
+        div(class="modal-content")
+          div(class="modal-header")
+            h5(class="modal-title") Actualización de Eventos
+            button(type="button" class="close" data-dismiss="modal" aria-hidden="Close")
+              span(aria-hidden="true") &times;
+          div(class="modal-body")
+            p Por favor ingrese los datos del evento:
+              include formulario.pug
+          div(class="modal-footer")
+            button(id="actualizarevento" type="submit" class="btn btn-warning") Actualizar Evento
+            button(id="cancelar" type="button" class="btn btn-primary" data-dismiss="modal") Cancelar
+include scripts.pug
+script
+  include ../public/javascripts/actualizar.eventos.js

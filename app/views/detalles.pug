@@ -1,0 +1,32 @@
+#detallesModal(class="modal" tabindex="-1" role="dialog")
+    div(class="modal-dialog" role="document")
+      div(class="modal-content")
+        div(class="modal-header")
+          h5(class="modal-title") Detalles del Evento
+          button(type="button" class="close" data-dismiss="modal" aria-hidden="Close")
+            span(aria-hidden="true") &times;
+        div(class="modal-body")
+          p A continuación se listan los datos del evento:
+            p
+              strong Nombre: 
+              span #{detalle.nombre}
+            p
+              strong Lugar: 
+              span #{detalle.lugar}
+            p
+              strong Dirección: 
+              span #{detalle.dir}
+            p
+              strong Fecha de Inicio: 
+              span #{detalle.fi}
+            p
+              strong Fecha de Finalización: 
+              span #{detalle.ff}
+            p
+              strong Categoría: 
+              span #{detalle.categoria}
+            p
+              strong Modalidad: 
+              span #{detalle.tipo}
+        div(class="modal-footer")
+          button(id="cancelar" type="button" class="btn btn-info" data-dismiss="modal") Aceptar

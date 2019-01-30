@@ -1,0 +1,17 @@
+#crearModal(class="modal fade bd-example-modal-lg" role="dialog")
+    div(class="modal-dialog modal-lg" role="document")
+      form#crear_evento(autocomplete="off"  name="crear_evento")
+        div(class="modal-content")
+          div(class="modal-header")
+            h5(class="modal-title") Creación de Eventos
+            button(type="button" class="close" data-dismiss="modal" aria-hidden="Close")
+              span(aria-hidden="true") &times;
+          div(class="modal-body")
+            p Por favor ingrese los datos del evento:
+              include formulario.pug
+          div(class="modal-footer")
+            button(id="crearevento" type="submit" class="btn btn-success") Crear Evento
+            button(id="cancelar" type="button" class="btn btn-primary" data-dismiss="modal") Cancelar
+include scripts.pug
+script
+  include ../public/javascripts/crear.eventos.js

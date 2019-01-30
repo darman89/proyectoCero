@@ -1,0 +1,33 @@
+.row
+  .col-sm-6
+    .form-group.mb-1
+      label(for="nombre") Nombre del Evento:
+      input#nombre.form-control(type="text", name="nombre", required)
+  .col-sm-6
+    .form-group.mb-1
+      label(for="fecha") Fecha Inicio - Finalización:
+      input#fecha.form-control(name="fecha", required)
+  .col-sm-6
+    .form-group.mb-1
+      label(for="direccion") Dirección:
+      input#direccion.form-control(name="direccion", required)
+  .col-sm-6
+    .form-group.mb-1
+      label(for="lugar") Lugar:
+      input#lugar.form-control(name="lugar", required)
+  .col-sm-6
+    .form-group.mb-1
+      label(for="categoria") Categoría:
+      select#categoria.form-control(name="categoria", required)
+        option(value="") Seleccione...
+        option(value=1) Conferencia
+        option(value=2) Seminario
+        option(value=3) Congreso
+        option(value=4) Curso
+  .col-sm-6
+    .form-group.mb-1
+      label(for="modalidad") Modalidad:
+      select#modalidad.form-control(name="modalidad", required)
+        option(value="") Seleccione...
+        option(value=1) Presencial
+        option(value=2) Virtual
